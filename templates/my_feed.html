@@ -9,9 +9,10 @@
       </div>
       
       <div class="main">
-        <a href="BROKEN-LINK-FIX-ME" class="btn btn-info" role="button">Publish a tweet</a>
+        <a href="/add" class="btn btn-info" role="button">Publish a tweet</a>
+        {% for tweet in tweets %}
         <div class="tweet-container">
-          <a href="BROKEN-LINK-FIX-ME" class="btn btn-info" role="button">Edit</a>
+          <a href="/edit" class="btn btn-info" role="button" name="">Edit</a>
           <div class="tweet-body">
             <img src="{{tweet.picture_url}}" alt="picture-{{tweet.id}}">
             <div class="tweet-text">{{tweet.text}}</div>
@@ -22,6 +23,7 @@
             <div class="tweet-user">{{tweet.favorite_count}}</div>
           </div>
         </div>
+        {% endfor %}
       </div>
     </div>
 

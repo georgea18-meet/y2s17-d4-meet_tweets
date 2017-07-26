@@ -9,7 +9,11 @@
       </div>
     
       <form action="BROKEN-LINK-FIX-ME" method="post">
-      <!-- MISSING FORM HERE -->
+      <textarea name="text" value="{{tweet.text}}"></textarea><br>
+      <input type="text" name="picture_url" value="{{tweet.picture_url}}"><br>
+      <input type="checkbox" name="show_location" value="{{tweet.show_location}}"> Show your location <br>
+      <input type="text" name="location" value="{{tweet.location}}">
+      <input type="submit" name="submit">
       </form>
 
       <a href="BROKEN-LINK-FIX-ME" class="btn btn-info" role="button">Cancel</a>
